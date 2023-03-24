@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.introducing {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.introducing > .avatars img {
+    width: 40vw;
+    height: 40vw;
+}
+
+.introducing > .caption {
+    max-width: unset;
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.hres {display: none !important;}
+.lres {display: inherit !important;}
+
+/*main*/
+main {
+    margin: 10px;
+}

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+.introducing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.introducing > .avatars {
+    display: flex;
+    flex-direction: column;
+}
+
+.introducing > .avatars > .avatar-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.introducing > .avatars img {
+    width: 192px;
+    height: 192px;
+    box-shadow: 0 0 5px whitesmoke;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px;
+}
+
+.introducing > .caption {
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 50%;
+}
+
+.introducing > .caption > * {
+    text-align: left;
+}
+
+.introducing > .caption > ul.caption-text {
+    list-style-type: none;
+    margin-left: -2rem;
+    font-size: 1.05rem;
+}
+
+.introducing > .caption > ul.caption-text > li {
+    margin-bottom: 1rem;
+}
+
+.introducing > .caption > ul.caption-text > li:nth-child(1)::before {
+    content: "Задача: ";
+    font-weight: bold;
+}
+
+.introducing > .caption > ul.caption-text > li:nth-child(2)::before {
+    content: "Реализация: ";
+    font-weight: bold;
+}
+
+.introducing > .caption > ul.caption-text > li:nth-child(3)::before {
+    content: "Роли: ";
+    font-weight: bold;
+}
+
+.introducing > .caption > ul.caption-text > li:nth-child(3) > ul {
+    list-style: none;
+}
+
+.introducing > .caption > ul.caption-text > li:nth-child(3) > ul > li:nth-child(1)::before {
+    content: "Роберт Толстов: ";
+    font-weight: bold;
+}
+
+.introducing > .caption > ul.caption-text > li:nth-child(3) > ul > li:nth-child(2)::before {
+    content: "Владислав Старко: ";
+    font-weight: bold;
+}
+
+.introducing > .caption > ul.caption-text > li:nth-child(3) > ul > li:nth-child(3)::before {
+    content: "Станислав Шустов: ";
+    font-weight: bold;
+}
+
+.introducing > .caption > ul.caption-text > li:nth-child(3) > ul > li:nth-child(4)::before {
+    content: "Максим Татаев: ";
+    font-weight: bold;
+}

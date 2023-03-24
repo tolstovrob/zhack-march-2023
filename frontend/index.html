@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.low.css')}}" media="screen and (max-width: 1024px)">
+{% endblock %}
+
+{% block main %}
+<div class="introducing">
+    <div class="caption fade-up box">
+        <h1>Кейс "Игра про Ростелеком"</h1>
+        <ul class="caption-text">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in amet odio exercitationem, excepturi omnis sint ad illo, nihil aliquid dolor voluptatem temporibus accusamus quibusdam asperiores nisi voluptate blanditiis aperiam.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in amet odio exercitationem, excepturi omnis sint ad illo, nihil aliquid dolor voluptatem temporibus accusamus quibusdam asperiores nisi voluptate blanditiis aperiam.</li>
+            <li>
+                <ul>
+                    <li>Frontend, Backend</li>
+                    <li>Frontend</li>
+                    <li>Gamedev</li>
+                    <li>Project managment</li>
+                </ul>
+            </li>
+            <li><a href="/auth" class="btn">Наша игра</a></li>
+            <li><a href="/lb" class="btn">Лидерборды</a></li>
+        </ul>
+    </div>
+    <div class="avatars">
+        <div class="avatar-block">
+            <a href="https://t.me/robertproducts" target="_blank"><img title="Псс, нажми на меня" src="{{url_for('static', filename='assets/developers/robert.jpg')}}" class="fade-down"></a>
+            <img src="{{url_for('static', filename='assets/developers/maksota.jpg')}}" class="fade-left">
+        </div>
+        <div class="avatar-block">
+            <img src="{{url_for('static', filename='assets/developers/stasik.jpg')}}" class="fade-right">
+            <img src="{{url_for('static', filename='assets/developers/vladus.jpg')}}" class="fade-up">
+        </div>
+    </div>
+</div>
+{% endblock %}

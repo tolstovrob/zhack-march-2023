@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Таблица лидеров
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/leaderboard.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/leaderboard.low.css')}}" media="screen and (max-width: 1024px)">
+{% endblock %}
+
+{% block main %}
+<h1>Таблица лидеров</h1>
+<table class="table">
+    <colgroup>
+        <col span="1" style="width: 80%;">
+        <col span="1" style="width: 20%;">
+     </colgroup>
+	<thead>
+		<tr>
+			<th>Ник</th>
+			<th>Лучший результат</th>
+		</tr>
+	</thead>
+	<tbody>
+        {% for user in users %}
+		<tr>
+			<td>{% if user.name_ in devs %}<i class="bi bi-star-fill"></i>&nbsp;{% endif %}{{ user.name_ }}</td>
+			<td>{{ user.high_score }}</td>
+		</tr>
+        {% endfor %}
+	</tbody>
+</table>
+{% endblock %}
