@@ -3,5 +3,5 @@
 
 * __Время__: 30 часов
 * __Роль в проекте__: Frontend-разработчик
-* __Стек__: Vanilla JS, Unity, SQL, Flask
+* __Стек__: Vanilla JS, Unity, SQLite, Flask
 * __Степень реализации__: Backend - 100% (но в конце он сломался), Frontend - 100%, Game - 100%
